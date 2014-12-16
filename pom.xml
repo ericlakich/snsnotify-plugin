@@ -28,6 +28,10 @@
             <id>nikos</id>
             <name>Niko Schmuck</name>
         </developer>
+        <developer>
+            <id>ericlakich</id>
+            <name>Eric Lakich</name>
+        </developer>
     </developers>
 
     <scm>
@@ -40,7 +44,7 @@
         <dependency>
             <groupId>com.amazonaws</groupId>
             <artifactId>aws-java-sdk</artifactId>
-            <version>RELEASE</version>
+            <version>1.8.11</version>
         </dependency>
     </dependencies>
 
