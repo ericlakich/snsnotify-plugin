@@ -177,6 +177,7 @@ public class AmazonSNSNotifier extends Notifier {
         try {
             EnvVars envVars = build.getEnvironment(listener);
             envVars.put("BUILD_PHASE", phase.name());
+            envVars.put("BUILD_RESULT", build.getResult().toString());
             envVars.put("BUILD_ARTIFACT_PATHS", artifactPaths(build.getArtifacts()));
             String result = Util.replaceMacro(tmpl, build.getBuildVariableResolver());
             return Util.replaceMacro(result, envVars);
